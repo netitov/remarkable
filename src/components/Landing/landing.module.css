@@ -1,0 +1,38 @@
+.landing {
+
+}
+
+.content {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px 0;
+}
+
+.main {
+  margin: 56px 0 144px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left {
+  width: 539px;
+}
+
+.btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.imgText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}

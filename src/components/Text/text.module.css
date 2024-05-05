@@ -1,0 +1,55 @@
+.title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.body-s {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.body-m {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.body-l {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.headline {
+  font-weight: 500;
+  font-size: 112px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.light {
+  color: #e7f3f3;
+}
+
+.dark {
+  color: #131a1b;
+}
+
+.brand {
+  color: #cbf36e;
+}
+
+.brand-secondary {
+  color: #276e6e;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: -0.06em;
+}

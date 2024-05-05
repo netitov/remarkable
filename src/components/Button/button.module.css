@@ -1,0 +1,14 @@
+.btn {
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dark {
+  background-color: var(--dark-secondary);
+}
+
+.light {
+  background-color: var(--light-secondary);
+}
