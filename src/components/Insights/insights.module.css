@@ -1,0 +1,48 @@
+.block {
+  padding-top: 144px;
+  width: 100%;
+}
+
+.cards {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 446px;
+  background-color: var(--light-secondary);
+  border-radius: 8px;
+  padding: 32px;
+  flex-grow: 1;
+  width: 300px;
+  flex-grow: 1;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.badge {
+  background-color: var(--brand);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .block {
+    padding-top: 80px;
+  }
+}

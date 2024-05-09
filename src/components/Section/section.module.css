@@ -1,0 +1,24 @@
+.section {
+  width: 100%;
+}
+
+.section_light {
+  background-color: var(--light);
+}
+
+.section_dark {
+  background-color: var(--dark);
+}
+
+.wrapper {
+  padding: 0 56px;
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+}

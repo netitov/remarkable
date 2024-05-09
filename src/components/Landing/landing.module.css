@@ -1,5 +1,7 @@
 .landing {
-
+  height: 100dvh;
+  padding: 0 56px;
+  max-width: 1440px;
 }
 
 .content {
@@ -13,15 +15,23 @@
   padding: 56px 0;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8vh;
+}
+
 .main {
-  margin: 56px 0 144px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
 }
 
 .left {
-  width: 539px;
+  max-width: 539px;
 }
 
 .btns {
@@ -35,4 +45,24 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+  .right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing {
+    padding: 0 15px;
+  }
+
+  .header {
+    padding: 35px 0;
+  }
+
+  .wrapper svg {
+    height: auto;
+  }
 }

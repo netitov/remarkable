@@ -53,3 +53,17 @@
   font-weight: 100;
   letter-spacing: -0.06em;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 56px;
+  }
+  
+  .headline {
+    font-size: 65px;
+  }
+
+  .body-s {
+    font-size: 14px;
+  }
+}

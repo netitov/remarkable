@@ -1,0 +1,20 @@
+.block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.block_dark .dot {
+  background-color: var(--brand-secondary);
+}
+
+.block_light .dot{
+  background-color: var(--brand);
+}

@@ -1,0 +1,7 @@
+.svg_dark path{
+  stroke: var(--dark);
+}
+
+.svg_light {
+  stroke: var(--light);
+}

@@ -1,10 +1,4 @@
-export type FontSizeType =
-  | 'title'
-  | 'body-s'
-  | 'body-m'
-  | 'body-l'
-  | 'headline'
-
+export type FontSizeType = 'title' | 'body-s' | 'body-m' | 'body-l' | 'headline';
 
 export type TagType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'span' | 'p';
 
@@ -19,8 +13,4 @@ export type WhiteSpaceType =
   | 'initial'
   | 'unset';
 
-export type ColorType =
-  | 'light'
-  | 'dark'
-  | 'brand'
-  | 'brand-secondary'
+export type ColorType = 'light' | 'dark' | 'brand' | 'brand-secondary';

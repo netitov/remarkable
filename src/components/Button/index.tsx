@@ -1,5 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
+import React from 'react';
 import Text from '../Text';
 import styles from './button.module.css';
 
@@ -9,17 +9,16 @@ interface IButton {
 }
 
 export default function Button({ text, style }: IButton) {
-
   const btnClass = classNames({
     [styles.btn]: true,
-    [styles[style]]: Boolean(style)
+    [styles[style]]: Boolean(style),
   });
 
   const color = style === 'dark' ? 'light' : 'dark';
 
   return (
     <button className={btnClass}>
-      <Text text={text} type='body-s' color={color} tag='span' />
+      <Text text={text} type="body-s" color={color} tag="span" />
     </button>
-  )
+  );
 }
