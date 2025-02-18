@@ -9,9 +9,9 @@ export const metadata: Metadata = {
     siteName: 'WB API',
     url: 'https://remarkable-alpha.vercel.app/',
     description: 'Remarkable site',
-    //type: type,
+    type: 'website',
     //locale: locale,
-    //images: imgSrc
+    images: '/about.png'
   }
 
 };
