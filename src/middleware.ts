@@ -4,6 +4,11 @@ import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 import { cookies } from 'next/headers'
 
+function isTelegramBot(request: NextRequest) {
+  const userAgent = request.headers.get('user-agent') || ''
+  return /TelegramBot/i.test(userAgent)
+}
+
 function getLocale(request: NextRequest): string | undefined {
   const negotiatorHeaders: Record<string, string> = {}
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value))
@@ -17,6 +22,9 @@ function getLocale(request: NextRequest): string | undefined {
   const languages = languagesNegotiator[0] === '*' ? ['default'] : languagesNegotiator
   const locale = match(languages, locales, 'default')
   console.log('MATCH', locale)
+  if (isTelegramBot(request)) {
+    return 'ru'
+  }
   const selectedLocale = cookies().get('locale')?.value
   return selectedLocale || locale
 }
