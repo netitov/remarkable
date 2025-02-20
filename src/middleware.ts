@@ -5,8 +5,8 @@ import Negotiator from 'negotiator'
 import { cookies } from 'next/headers'
 
 function isTelegramBot(request: NextRequest) {
-  const userAgent = request.headers.get('user-agent') || ''
-  return /TelegramBot/i.test(userAgent)
+  const userAgent = request.headers.get('user-agent')
+  return userAgent?.toLowerCase().includes('telegrambot') ?? false
 }
 
 function getLocale(request: NextRequest): string | undefined {
@@ -29,7 +29,7 @@ function getLocale(request: NextRequest): string | undefined {
 }
 
 export function middleware(request: NextRequest) {
-  console.log('final', getLocale(request))
+  console.log('final new', getLocale(request))
 }
 
 export const config = {
