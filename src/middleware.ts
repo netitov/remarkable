@@ -21,7 +21,6 @@ function getLocale(request: NextRequest): string | undefined {
   console.log('languagesNegotiator', languagesNegotiator)
   const languages = languagesNegotiator[0] === '*' ? ['default'] : languagesNegotiator
   const locale = match(languages, locales, 'default')
-  console.log('MATCH', locale)
   if (isTelegramBot(request)) {
     return 'ru'
   }
@@ -30,7 +29,7 @@ function getLocale(request: NextRequest): string | undefined {
 }
 
 export function middleware(request: NextRequest) {
-  getLocale(request)
+  console.log('final', getLocale(request))
 }
 
 export const config = {
